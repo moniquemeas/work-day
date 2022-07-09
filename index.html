@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+      <p id="currentTime"></p>
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here -->
+     
+        <form class ="task-list row justify-content-center" >
+        <label id="time-8" class="hour time-block col-4">08:00</label>
+        <textarea id="taskText"class="task bg-secondary" name="taskDescription" row="4" col="37" value=""></textarea>
+        <button id="inputBtn8" class="saveBtn" type="submit">Save</button>
+        </form>
+        <form class ="task-list row justify-content-center" >
+          <label id="time-9" class="hour time-block col-4">09:00</label>
+          <textarea id="taskText9"class="task bg-secondary" name="taskDescription" row="4" col="37" value=""></textarea>
+          <button id="inputBtn9" class="saveBtn" type="submit">Save</button>
+        </form>
+        <form class ="task-list row justify-content-center" >
+          <label id="time-10" class="hour time-block col-4">10:00</label>
+          <textarea id="taskText10"class="task bg-secondary" name="taskDescription" row="4" col="37" value=""></textarea>
+          <button id="inputBtn10" class="saveBtn" type="submit">Save</button>
+        </form>
+        <form class ="task-list row justify-content-center" >
+          <label id="time-11" class="hour time-block col-4">11:00</label>
+          <textarea id="taskText-11"class="task bg-secondary" name="taskDescription" row="4" col="37" value=""></textarea>
+          <button id="inputBtn-11" class="saveBtn" type="submit">Save</button>
+        </form>
+        <form class ="task-list row justify-content-center" >
+          <label id="time-12" class="hour time-block col-4">12:00</label>
+          <textarea id="taskText-12"class="task bg-secondary" name="taskDescription" row="4" col="37" value=""></textarea>
+          <button id="inputBtn-12" class="saveBtn" type="submit">Save</button>
+        </form>
+        <form class ="task-list row justify-content-center" >
+          <label id="time-13" class="hour time-block col-4">13:00</label>
+          <textarea id="taskText-13"class="task bg-secondary" name="taskDescription" row="4" col="37" value=""></textarea>
+          <button id="inputBtn-13" class="saveBtn" type="submit">Save</button>
+        </form>
+        <form class ="task-list row justify-content-center" >
+          <label id="time-14" class="hour time-block col-4">14:00</label>
+          <textarea id="taskText-14"class="task bg-secondary" name="taskDescription" row="4" col="37" value=""></textarea>
+          <button id="inputBtn-14" class="saveBtn" type="submit">Save</button>
+        </form>
+        
+        <form class ="task-list row justify-content-center" >
+          <label id="time-15" class="hour time-block col-4">15:00</label>
+          <textarea id="taskText-15"class="task bg-secondary" name="taskDescription" row="4" col="37" value=""></textarea>
+          <button id="inputBtn-15" class="saveBtn" type="submit">Save</button>
+        </form>
+        <form class ="task-list row justify-content-center" >
+          <label id="time-16" class="hour time-block col-4">16:00</label>
+          <textarea id="taskText-16"class="task bg-secondary" name="taskDescription" row="4" col="37" value=""></textarea>
+          <button id="inputBtn-16" class="saveBtn" type="submit">Save</button>
+        </form>
+        <form class ="task-list row justify-content-center" >
+          <label id="time-17" class="hour time-block col-4">17:00</label>
+          <textarea id="taskText-17"class="task bg-secondary" name="taskDescription" row="4" col="37" value=""></textarea>
+          <button id="inputBtn-17" class="saveBtn" type="submit">Save</button>
+        </form>
+      
+      
+      
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
