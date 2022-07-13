@@ -3,7 +3,7 @@ var currentTime = document.getElementById("currentTime");
 var timeTable = document.querySelector(".time-block");
 
 //set current date
-var currentDate = new Date();
+var currentDate = moment();
 
 todayDate.textContent = currentDate;
 
