@@ -7,6 +7,8 @@ var timeNow = moment().format('LT');
 currentDay.textContent = todayDate;
 currentTime.textContent = timeNow;
 
+//set current date
+var currentDate = new Date();
 
 //check local storage at8 
 
@@ -18,8 +20,30 @@ if (getTask === null){
 }else{
 taskTextInput.value = getTask.description;
 }
+//set start time at 8
+var startTime = new Date();
+startTime.setHours(08,00,0);
 
+//set end time at 8:59
+var endTime = new Date();
+endTime.setHours(08,59,0);
 
+// if it's current time
+if (currentDate > startTime && currentDate < endTime){
+    
+    taskTextInput.classList.add("present");
+}
+// if the time has past
+else if (startTime < currentDate){
+    
+    taskTextInput.classList.add("past");
+}
+// furture time
+else if(endTime > currentDate){
+    
+    taskTextInput.classList.add("future");
+}
+// function start here
 taskInput.addEventListener("click", function(e){
     e.preventDefault();
     var timeInput8 = document.getElementById("time-8");
@@ -44,6 +68,29 @@ taskTextInput9.value = getTask.description;
 
 //display the task description in the textarea after the page refresh
 taskTextInput9.value = getTask9.description;
+}
+
+//set stat time at 9
+var startTime = new Date();
+startTime.setHours(09,00,0);
+
+//set end time at 9:59
+var endTime = new Date();
+endTime.setHours(09,59,0);
+// if it's current time
+if (currentDate > startTime && currentDate < endTime){
+    
+    taskTextInput9.classList.add("present");
+}
+// if the time has past
+else if (startTime < currentDate){
+    
+    taskTextInput9.classList.add("past");
+}
+// furture time
+else if(endTime > currentDate){
+    
+    taskTextInput9.classList.add("future");
 }
 
 //task at 9
@@ -72,6 +119,28 @@ if (getTask10 === null){
 
 //display the task description in the textarea after the page refresh
 taskTextInput10.value = getTask10.description;
+}
+//set stat time at 10
+var startTime = new Date();
+startTime.setHours(10,00,0);
+
+//set end time at 10:59
+var endTime = new Date();
+endTime.setHours(10,59,0);
+// if it's current time
+if (currentDate > startTime && currentDate < endTime){
+    
+    taskTextInput10.classList.add("present");
+}
+// if the time has past
+else if (startTime < currentDate){
+    
+    taskTextInput10.classList.add("past");
+}
+// furture time
+else if(endTime > currentDate){
+    
+    taskTextInput10.classList.add("future");
 }
 
 //task at 10
@@ -102,6 +171,29 @@ if (getTask11 === null){
 taskTextInput11.value = getTask11.description;
 }
 
+//set stat time at 11
+var startTime = new Date();
+startTime.setHours(11,00,0);
+
+//set end time at 11:59
+var endTime = new Date();
+endTime.setHours(11,59,0);
+// if it's current time
+if (currentDate > startTime && currentDate < endTime){
+    
+    taskTextInput11.classList.add("present");
+}
+// if the time has past
+else if (startTime < currentDate){
+    
+    taskTextInput11.classList.add("past");
+}
+// furture time
+else if(endTime > currentDate){
+    
+    taskTextInput11.classList.add("future");
+}
+
 //task at 11
 var taskTextInput11 = document.getElementById("taskText-11");
 var taskInput11 = document.getElementById("inputBtn-11");
@@ -126,6 +218,28 @@ if (getTask12 === null){
 }else{
 //display the task description in the textarea after the page refresh
 taskTextInput12.value = getTask12.description;
+}
+//set stat time at 12
+var startTime = new Date();
+startTime.setHours(12,00,0);
+
+//set end time at 12:59
+var endTime = new Date();
+endTime.setHours(12,59,0);
+// if it's current time
+if (currentDate > startTime && currentDate < endTime){
+    
+    taskTextInput12.classList.add("present");
+}
+// if the time has past
+else if (startTime < currentDate){
+    
+    taskTextInput12.classList.add("past");
+}
+// furture time
+else if(endTime > currentDate){
+    
+    taskTextInput12.classList.add("future");
 }
 
 //task at 12
@@ -154,6 +268,28 @@ if (getTask13 === null){
 taskTextInput13.value = getTask13.description;
 }
 
+//set stat time at 13
+var startTime = new Date();
+startTime.setHours(13,00,0);
+
+//set end time at 13:59
+var endTime = new Date();
+endTime.setHours(13,59,0);
+// if it's current time
+if (currentDate > startTime && currentDate < endTime){
+    
+    taskTextInput13.classList.add("present");
+}
+// if the time has past
+else if (startTime < currentDate){
+    
+    taskTextInput13.classList.add("past");
+}
+// furture time
+else if(endTime > currentDate){
+    
+    taskTextInput13.classList.add("future");
+}
 //task at 13:00
 var taskTextInput13 = document.getElementById("taskText-13");
 var taskInput13 = document.getElementById("inputBtn-13");
@@ -179,6 +315,28 @@ if (getTask14 === null){
 //display the task description in the textarea after the page refresh
 taskTextInput14.value = getTask14.description;
 }
+//set stat time at 14
+var startTime = new Date();
+startTime.setHours(14,00,0);
+
+//set end time at 14:59
+var endTime = new Date();
+endTime.setHours(14,59,0);
+// if it's current time
+if (currentDate > startTime && currentDate < endTime){
+    
+    taskTextInput14.classList.add("present");
+}
+// if the time has past
+else if (startTime < currentDate){
+    
+    taskTextInput14.classList.add("past");
+}
+// furture time
+else if(endTime > currentDate){
+    
+    taskTextInput14.classList.add("future");
+}
 
 //task at 14:00
 var taskTextInput14 = document.getElementById("taskText-14");
@@ -195,7 +353,7 @@ taskInput14.addEventListener("click", function(e){
     localStorage.setItem("taskInfo14", JSON.stringify(taskInfo14));
     console.log(taskInfo14);
 });
-//check local storage at 16
+//check local storage at 15
 var getTask15 = JSON.parse(localStorage.getItem("taskInfo15"));
 var taskTextInput15 = document.getElementById("taskText-15");
 var taskInput15 = document.getElementById("inputBtn-15");
@@ -204,6 +362,28 @@ if (getTask15 === null){
 }else{
 //display the task description in the textarea after the page refresh
 taskTextInput15.value = getTask15.description;
+}
+//set stat time at 15
+var startTime = new Date();
+startTime.setHours(15,00,0);
+
+//set end time at 15:59
+var endTime = new Date();
+endTime.setHours(15,59,0);
+// if it's current time
+if (currentDate > startTime && currentDate < endTime){
+    
+    taskTextInput15.classList.add("present");
+}
+// if the time has past
+else if (startTime < currentDate){
+    
+    taskTextInput15.classList.add("past");
+}
+// furture time
+else if(endTime > currentDate){
+    
+    taskTextInput15.classList.add("future");
 }
 
 //task at 15:00
@@ -232,6 +412,29 @@ if (getTask16 === null){
 taskTextInput16.value = getTask16.description;
 }
 
+//set stat time at 16
+var startTime = new Date();
+startTime.setHours(16,00,0);
+
+//set end time at 16:59
+var endTime = new Date();
+endTime.setHours(16,59,0);
+// if it's current time
+if (currentDate > startTime && currentDate < endTime){
+    
+    taskTextInput16.classList.add("present");
+}
+// if the time has past
+else if (startTime < currentDate){
+    
+    taskTextInput16.classList.add("past");
+}
+// furture time
+else if(endTime > currentDate){
+    
+    taskTextInput16.classList.add("future");
+}
+
 //task at 16:00
 var taskTextInput16 = document.getElementById("taskText-16");
 var taskInput16 = document.getElementById("inputBtn-16");
@@ -258,6 +461,28 @@ if (getTask17 === null){
 taskTextInput17.value = getTask17.description;
 }
 
+//set stat time at 17
+var startTime = new Date();
+startTime.setHours(17,00,0);
+
+//set end time at 17:59
+var endTime = new Date();
+endTime.setHours(17,59,0);
+// if it's current time
+if (currentDate > startTime && currentDate < endTime){
+    
+    taskTextInput17.classList.add("present");
+}
+// if the time has past
+else if (startTime < currentDate){
+    
+    taskTextInput17.classList.add("past");
+}
+// furture time
+else if(endTime > currentDate){
+    
+    taskTextInput17.classList.add("future");
+}
 //task at 17:00
 var taskTextInput17 = document.getElementById("taskText-17");
 var taskInput17 = document.getElementById("inputBtn-17");
