@@ -16,9 +16,15 @@ User is able to edit the events and save them.
 
 ![Time blocks with color coded](./assets/images/time%20blocks.jpg)
 
+- Past color 
+
 -![Past color](./assets/images/past.jpg)
 
+- Present color
+
 -![Present color](./assets/images/present.jpg)
+
+- Future color
 
 -![Future color](./assets/images/future.jpg)
 
