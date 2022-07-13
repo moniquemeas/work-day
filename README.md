@@ -44,7 +44,7 @@ User is able to edit the events and save them.
 
 # 3rd Pary API
 * Bootstrap
-* Moment.js
+
 
 # Deployemt
 

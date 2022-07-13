@@ -1,14 +1,12 @@
-var currentDay = document.getElementById("currentDay");
+var currentDate = document.getElementById("currentDay");
 var currentTime = document.getElementById("currentTime");
 var timeTable = document.querySelector(".time-block");
-var todayDate = moment().format('MMM Do YY');
-var timeNow = moment().format('LT');
-
-currentDay.textContent = todayDate;
-currentTime.textContent = timeNow;
 
 //set current date
 var currentDate = new Date();
+
+
+currentDay.textContent = currentDate;
 
 //check local storage at8 
 
