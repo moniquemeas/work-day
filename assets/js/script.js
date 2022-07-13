@@ -1,13 +1,13 @@
-var currentDate = document.getElementById("currentDay");
+var todayDate = document.getElementById("currentDay");
 var currentTime = document.getElementById("currentTime");
 var timeTable = document.querySelector(".time-block");
 
 //set current date
 var currentDate = new Date();
 
+todayDate.textContent = currentDate;
 
-currentDay.textContent = currentDate;
-
+console.log(currentDate);
 //check local storage at8 
 
 var getTask = JSON.parse(localStorage.getItem("taskInfo"));
